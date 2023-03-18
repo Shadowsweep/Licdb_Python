@@ -1,6 +1,6 @@
 import pymysql as SQL
 try:
-    conn = SQL.connect(host="localhost",port=3306,user="root",passwd="2022")
+    conn = SQL.connect(host="localhost",port=3306,user="root",passwd="Your password")
     smt = conn.cursor()
     q="create database licdb"
     smt.execute(q)
