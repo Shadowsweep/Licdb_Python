@@ -1,6 +1,6 @@
 import pymysql as SQL
 try:
-    conn = SQL.connect(host="localhost",port=3306,user="root",passwd="2022",database="licdb",cursorclass=SQL.cursors.DictCursor)
+    conn = SQL.connect(host="localhost",port=3306,user="root",passwd="Your pass here",database="licdb",cursorclass=SQL.cursors.DictCursor)
     smt = conn.cursor()
     pno = input("Enter policy no. : ")
     q = "Select * from lict where policyno={0}".format(pno)
