@@ -1,6 +1,6 @@
 import pymysql as SQL
 try:
-    conn = SQL.connect(host="localhost",port=3306,user="root",passwd="2022",database="licdb")
+    conn = SQL.connect(host="localhost",port=3306,user="root",passwd="your pass here",database="licdb")
     smt = conn.cursor()
     
     pn = input("Enter policy number(10 digits): ")
